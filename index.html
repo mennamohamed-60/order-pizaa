@@ -3,17 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Black Goose Bistro offers custom wood-fired pizza delivered to your door in under an hour. Choose your crust, toppings, and more!"
+    />
+    <meta
+      name="keywords"
+      content="pizza delivery, custom pizza, Black Goose Bistro, order pizza online, wood-fired pizza"
+    />
+    <meta name="author" content="Black Goose Bistro Team" />
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: brown;
+        margin: 20px;
+      }
+
+      #title {
+        color: brown;
+      }
+
+      .dream-pizaa {
+        color: rgb(122, 164, 205);
+      }
+
+      label {
+        font-weight: bold;
+        padding: 5px;
+      }
+
+      .featured{
+        font-size: 20px;
+        color: rgb(226, 144, 43);
+      }
+    </style>
     <title>order pizaa</title>
   </head>
   <body>
-    
     <nav>
       <a href="#main">Main</a>
       <a href="#make-order">Make an Order</a>
       <a href="#contact">contact Us</a>
     </nav>
     <header id="main">
-      <h1>Black Goose Bistro | pizaa-on-demand</h1>
+      <h1 id="title">Black Goose Bistro | pizaa-on-demand</h1>
       <p>
         Our 12<sup>n</sup> Wood-fired pizaa are avilable for delivery, build
         your coustom pizaa and we'll deliver it within an hour
@@ -21,7 +58,7 @@
     </header>
 
     <fieldset>
-      <legend>Your information</legend>
+      <legend class="featured">Your information</legend>
 
       <table>
         <tr>
@@ -56,13 +93,15 @@
         name="message"
         maxlength="400"
         placeholder="no more than 400 character long"
+        rows="4"
+        cols="40"
       ></textarea>
     </fieldset>
 
-    <h2>design your dream pizza</h2>
-    
+    <h2 class="dream-pizaa">design your dream pizza</h2>
+
     <fieldset id="make-order">
-      <legend>pizaa specs</legend>
+      <legend class="featured">pizaa specs</legend>
 
       <fieldset>
         <legend>crust (choose one):</legend>
@@ -79,11 +118,10 @@
         <input type="radio" id="gluten-free" name="crust" value="gluten-free" />
         <label for="gluten-free">gluten-free</label>
       </fieldset>
-       
 
-      <br>
+      <br />
       <fieldset>
-        <legend>toppings (choose as many as you want)</legend>
+        <legend class="featured">toppings (choose as many as you want)</legend>
 
         <input
           type="checkbox"
@@ -93,14 +131,13 @@
         />
         <label for="red-sauce"> red-sauce</label><br />
 
-
         <input
           type="checkbox"
           id="mozzarella"
           name="topping"
           value="mozzarella"
         />
-        <label for="mozzarella">mozzarella cheese </label> <br>
+        <label for="mozzarella">mozzarella cheese </label> <br />
 
         <input
           type="checkbox"
@@ -118,12 +155,7 @@
         />
         <label for="mushrooms"> mushrooms</label><br />
 
-        <input
-          type="checkbox"
-          id="peppers"
-          name="topping"
-          value="peppers"
-        />
+        <input type="checkbox" id="peppers" name="topping" value="peppers" />
         <label for="peppers"> peppers</label><br />
 
         <input
@@ -135,21 +167,15 @@
         <label for="anchovies"> anchovies</label><br />
       </fieldset>
 
-
-
       <fieldset>
-        <legend>number</legend>
+        <legend class="featured">number</legend>
         <label for="number">how many pizzas:</label>
         <input id="number" type="number" max="12" />
       </fieldset>
-
-      
     </fieldset>
-     
-    <br>
-    <input type="button" value="bring me a pizza!">
-    <input type="reset">
 
-
+    <br />
+    <input type="button" value="bring me a pizza!" />
+    <input type="reset" />
   </body>
 </html>
